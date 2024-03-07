@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Show scrollbar on hover */
+  :hover::-webkit-scrollbar {
+    display: block;
+  }  
+  .overflow-y-auto::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Show scrollbar on hover */
+  .overflow-y-auto:hover::-webkit-scrollbar {
+    display: block;
+  }
+  
+  /* Remove space for scrollbar when not appearing */
+  .overflow-y-auto {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
